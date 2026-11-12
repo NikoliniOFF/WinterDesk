@@ -39,6 +39,7 @@ header.top nav a:hover{color:#fff}
 .btn.ghost{background:var(--card);border:1px solid var(--line)}
 .btn svg{width:22px;height:22px}
 .meta{margin-top:14px;color:var(--sub);font-size:14px}
+.dlcount{margin:8px 0 0;font-size:14px;font-weight:600;color:var(--sub)}.dlcount b{color:inherit;font-variant-numeric:tabular-nums}
 .heroimg{position:relative;display:flex;justify-content:center}
 .heroimg img{width:min(340px,80%);height:auto;filter:drop-shadow(0 30px 60px #2a1f8f99);animation:float 6s ease-in-out infinite}
 .heroimg::before{content:"";position:absolute;inset:10% 10%;background:radial-gradient(circle,#7c6cff66,transparent 65%);filter:blur(30px)}
@@ -118,6 +119,7 @@ footer{padding:50px 0 120px;color:var(--sub);font-size:14px;text-align:center}
         <a class="btn ghost" href="#features">Что умеет</a>
       </div>
       <div class="meta"><span class="dlinfo">ZIP · около&nbsp;1&nbsp;МБ</span> · Windows 10 и 11 (64-бит) · без установки · обновляется сама · <a href="https://github.com/NikoliniOFF/WinterDesk/releases">Все версии</a></div>
+      <div class="dlcount" hidden></div>
     </div>
     <div class="heroimg"><img src="assets/icon-512.png" alt="Значок WinterDesk" width="340" height="340"></div>
   </div>
@@ -141,8 +143,9 @@ footer{padding:50px 0 120px;color:var(--sub);font-size:14px;text-align:center}
       <div class="card"><div class="e">🎆</div><h3>Салют и Дед Мороз</h3><p>Фейерверки за окнами или поверх них, сани с оленями пролетают по небу.</p></div>
       <div class="card"><div class="e">⛄</div><h3>Снежки и снеговики</h3><p>Смахивайте снег варежкой или лопатой, катайте снежки с <span class="kbd">Ctrl</span> — из трёх шаров вырастет снеговик. Снежок разбивается об окно и сбивает с него снег, катится с сугроба и растёт, а снежки на панели задач слипаются в крепость.</p></div>
       <div class="card"><div class="e">🖱️</div><h3>Снег на курсоре</h3><p>Пока мышь не двигается, на курсор налипает снежная шапка и осыпается, когда вы снова за неё возьмётесь. Каждая забава отключается отдельно.</p></div>
+      <div class="card"><div class="e">🎅</div><h3>Новогодний курсор</h3><p>Снежинка, Леденец, Варежка или Ёлочка — и крутящийся значок ожидания. Над снегом курсор становится варежкой, лопатой или снежком. На паузе и при выходе обычные курсоры возвращаются сами.</p></div>
       <div class="card"><div class="e">🚜</div><h3>Трактор</h3><p>Расчищает панель задач по кнопке или сам — по расписанию или когда сугроб вырастет. Паузу между уборками можно настроить или убрать совсем.</p></div>
-      <div class="card"><div class="e">🎮</div><h3>Не мешает работе</h3><p>Клики проходят сквозь снег, в играх и видео на весь экран — автопауза, на нескольких мониторах — только там, где игра. <span class="kbd">Ctrl+Alt+F12</span> — пауза всего.</p></div>
+      <div class="card"><div class="e">🎮</div><h3>Не мешает работе</h3><p>Клики проходят сквозь снег, в играх и видео на весь экран — пауза на всех мониторах или только на одном, как настроите. <span class="kbd">Ctrl+Alt+F12</span> — пауза всего.</p></div>
     </div>
   </section>
 
@@ -154,6 +157,7 @@ footer{padding:50px 0 120px;color:var(--sub);font-size:14px;text-align:center}
       <figure><video class="lazyv" muted loop playsinline preload="none" poster="assets/media/window-poster.jpg" data-src="assets/media/window.mp4" aria-label="Сугроб и гирлянда на окне"></video><figcaption>Сугроб и гирлянда на окне</figcaption></figure>
       <figure><img src="assets/media/countdown.jpg" alt="Гирлянда по краю экрана и отсчёт до Нового года" loading="lazy" width="960" height="540"><figcaption>Гирлянда по краю экрана и отсчёт до Нового года</figcaption></figure>
       <figure class="wide strip"><video class="lazyv" muted loop playsinline preload="none" poster="assets/media/tractor-poster.jpg" data-src="assets/media/tractor.mp4" aria-label="Трактор расчищает панель задач"></video><figcaption>Трактор расчищает сугроб на панели задач и едет к ёлочке</figcaption></figure>
+      <figure class="wide"><img src="assets/media/cursors.png" alt="Наборы «Новогоднего курсора» и курсоры инструментов" loading="lazy" width="1260" height="880"><figcaption>«Новогодний курсор»: четыре набора и курсоры инструментов</figcaption></figure>
     </div>
     <h3 class="panels-h">Все настройки — в одной панели у часов</h3>
     <p class="st">Нажмите на значок WinterDesk в трее — каждую часть праздника можно включить, выключить и настроить.</p>
@@ -227,6 +231,7 @@ footer{padding:50px 0 120px;color:var(--sub);font-size:14px;text-align:center}
       Скачать WinterDesk
     </a>
     <p class="cta-meta"><span class="dlinfo">ZIP · около&nbsp;1&nbsp;МБ</span> · <a href="https://github.com/NikoliniOFF/WinterDesk/releases">Все версии</a></p>
+    <p class="dlcount" hidden></p>
   </div>
 
   <footer>WinterDesk для Windows · Windows 10 и 11 (64-бит) · <a href="https://github.com/NikoliniOFF/WinterDesk/releases">все версии</a> · <a href="https://github.com/NikoliniOFF/WinterDesk/discussions">обсуждения</a></footer>
@@ -287,6 +292,22 @@ v.forEach(function(e){io.observe(e);});})();
  document.querySelectorAll('.dlinfo').forEach(function(e){e.textContent=t;});
  document.querySelectorAll('a.dl').forEach(function(e){e.href=a.browser_download_url;e.title='WinterDesk для Windows '+v;});
 }).catch(function(){});})();
+</script>
+<script>
+// сколько раз скачали: сумма download_count всех .zip во всех релизах (GitHub API, без счётчиков и аналитики); кэш на час
+(function(){var K='wd_dlcount',H=3600000,c=null;
+try{c=JSON.parse(localStorage.getItem(K)||'null');}catch(e){}
+function plural(n,a,b,d){var x=n%100,m=n%10;if(x>10&&x<20)return d;if(m>1&&m<5)return b;if(m==1)return a;return d;}
+function show(n){if(!(n>0))return;var t=n.toLocaleString('ru-RU');
+ document.querySelectorAll('.dlcount').forEach(function(e){e.innerHTML='⬇ Скачали <b></b> '+plural(n,'раз','раза','раз');e.querySelector('b').textContent=t;e.hidden=false;});}
+if(c&&c.n>0&&Date.now()-c.t<H){show(c.n);return;}
+var sum=0;
+function page(p){return fetch('https://api.github.com/repos/NikoliniOFF/WinterDesk/releases?per_page=100&page='+p,{headers:{Accept:'application/vnd.github+json'}})
+ .then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(j){
+  j.forEach(function(rel){(rel.assets||[]).forEach(function(a){if(/\.zip$/i.test(a.name))sum+=a.download_count||0;});});
+  if(j.length===100&&p<10)return page(p+1);});}
+page(1).then(function(){try{localStorage.setItem(K,JSON.stringify({n:sum,t:Date.now()}));}catch(e){}show(sum);})
+ .catch(function(){if(c&&c.n>0)show(c.n);});})();
 </script>
 </body>
 </html>
