@@ -41,14 +41,16 @@
 ## 📸 Как это выглядит
 
 <p align="center">
-  <img src="docs/assets/media/tractor.gif" alt="Трактор расчищает сугроб на панели задач" width="100%">
+  <img src="docs/assets/media/snowfall.gif" alt="Снег идёт прямо по рабочему столу Windows: гирлянда, ёлочка, сугроб на панели задач, отсчёт до Нового года" width="100%">
 </p>
 <p align="center">
-  <img src="docs/assets/media/desktop.jpg" alt="Снег, гирлянда, ёлочка, отсчёт до Нового года и панель настроек на рабочем столе" width="100%">
+  <img src="docs/assets/media/window.gif" alt="Сугроб и гирлянда на окне" width="100%">
 </p>
 <p align="center">
-  <img src="docs/assets/media/window-pile.jpg" alt="Сугроб и гирлянда на окне" width="49%">
-  <img src="docs/assets/media/countdown.jpg" alt="Гирлянда по краю экрана и отсчёт до Нового года" width="49%">
+  <img src="docs/assets/media/tractor.gif" alt="Трактор расчищает сугроб на панели задач и едет к ёлочке" width="100%">
+</p>
+<p align="center">
+  <img src="docs/assets/media/countdown.jpg" alt="Гирлянда по краю экрана и отсчёт до Нового года" width="70%">
 </p>
 <p align="center">
   <img src="docs/assets/media/panels.jpg" alt="Панель настроек: снег, гирлянды, ёлочка, обновления" width="100%">
