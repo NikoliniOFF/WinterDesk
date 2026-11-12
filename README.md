@@ -6,6 +6,7 @@
   <a href="https://github.com/NikoliniOFF/WinterDesk/releases/latest/download/WinterDesk-win64.zip">
     <img src="https://img.shields.io/badge/%E2%AC%87%EF%B8%8F%20%D0%A1%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-WinterDesk%20%D0%B4%D0%BB%D1%8F%20Windows-6c5cff?style=for-the-badge&labelColor=1b2470" alt="Скачать WinterDesk для Windows" height="56">
   </a>
+  <br><sub>Скачивается сразу ZIP с последней версией · <a href="https://github.com/NikoliniOFF/WinterDesk/releases">Все версии</a></sub>
 </p>
 
 <p align="center">
