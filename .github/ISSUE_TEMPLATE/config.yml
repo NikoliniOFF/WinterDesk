@@ -1,8 +1,8 @@
 blank_issues_enabled: true
 contact_links:
   - name: 💡 Предложить идею
-    url: https://github.com/NikoliniOFF/WinterDesk/discussions/new?category=ideas
+    url: https://github.com/NikoliniOFF/WinterDesk/discussions/new?category=%D0%B8%D0%B4%D0%B5%D0%B8
     about: Новые эффекты, настройки, пожелания — в обсуждениях
   - name: ❓ Задать вопрос
-    url: https://github.com/NikoliniOFF/WinterDesk/discussions/new?category=q-a
+    url: https://github.com/NikoliniOFF/WinterDesk/discussions/new?category=%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B
     about: Как что-то настроить или почему что-то работает так

@@ -124,7 +124,7 @@ WinterDesk сам проверяет новые версии на этой ст�
 
 Есть идея, вопрос или нашли баг? Пишите:
 
-- 💡 [Предложить идею](https://github.com/NikoliniOFF/WinterDesk/discussions/new?category=ideas)
+- 💡 [Предложить идею](https://github.com/NikoliniOFF/WinterDesk/discussions/new?category=%D0%B8%D0%B4%D0%B5%D0%B8)
 - 🐞 [Сообщить о баге](https://github.com/NikoliniOFF/WinterDesk/issues/new?template=bug.yml)
 - 💬 [Все обсуждения](https://github.com/NikoliniOFF/WinterDesk/discussions)
 
