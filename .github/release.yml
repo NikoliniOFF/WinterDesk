@@ -1,0 +1,10 @@
+# Шаблон автоматических заметок к выпуску GitHub (если создавать выпуск через веб-интерфейс).
+# Основное описание берётся из release-notes/vX.Y.Z.md скриптом publish_release.sh.
+changelog:
+  categories:
+    - title: "✨ Новое"
+      labels: ["feature", "enhancement"]
+    - title: "🛠️ Исправлено"
+      labels: ["bug", "fix"]
+    - title: "Прочее"
+      labels: ["*"]
