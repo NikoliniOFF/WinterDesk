@@ -1,0 +1,35 @@
+name: Сообщить о баге
+description: Что-то в WinterDesk работает не так
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Спасибо, что сообщаете! Чем подробнее — тем быстрее получится исправить."
+  - type: textarea
+    id: what
+    attributes:
+      label: Что случилось
+      placeholder: "Например: снежок провалился под панель задач"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как повторить
+      placeholder: "1. …\n2. …"
+  - type: input
+    id: version
+    attributes:
+      label: Версия WinterDesk
+      description: Вкладка «О программе», внизу
+      placeholder: "1.3.5"
+  - type: input
+    id: windows
+    attributes:
+      label: Windows и экраны
+      placeholder: "Windows 11, масштаб 125%, два монитора, панель задач внизу"
+  - type: textarea
+    id: extra
+    attributes:
+      label: Скриншот или журнал
+      description: "Перетащите сюда скриншот. Журнал: запустите `WinterDesk.exe --log`, он появится в `%TEMP%\\WinterDesk.log`."

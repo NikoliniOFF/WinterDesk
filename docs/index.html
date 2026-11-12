@@ -85,6 +85,7 @@ details p{color:#c9d0f0;margin:10px 0 0}
 .cta{margin:70px 0 0;padding:40px 26px;border-radius:28px;text-align:center;background:radial-gradient(600px 200px at 50% 0%,#7c6cff55,transparent),linear-gradient(135deg,#1b2a8a,#3a2aa0 60%,#5a2fb5);border:1px solid #ffffff22}
 .cta h2{margin:0 0 10px;font-size:34px}
 .cta p{margin:0 0 22px;color:#dfe4ff}
+.talkbtns{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 26px}.talkbtns .btn{font-size:16px;padding:13px 20px}.giscus-wrap{padding:18px;border-radius:20px;background:var(--card);border:1px solid var(--line)}.giscus-note{color:var(--sub);font-size:14px;margin:12px 0 0}
 footer{padding:50px 0 120px;color:var(--sub);font-size:14px;text-align:center}
 .drift{position:fixed;left:0;right:0;bottom:-30px;height:90px;z-index:3;pointer-events:none;background:radial-gradient(60% 100% at 25% 100%,#eef3ff 60%,transparent 61%),radial-gradient(55% 90% at 80% 100%,#e2e9ff 60%,transparent 61%);opacity:.95}
 @media (max-width:900px){.hero{grid-template-columns:1fr;text-align:center;padding-top:34px}.hero p.lead{margin-left:auto;margin-right:auto}.btns{justify-content:center}.heroimg{order:-1}.heroimg img{width:200px}.hero h1{font-size:46px}.grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.shots{grid-template-columns:1fr}.panels{justify-content:flex-start}.shots img,.shots video{height:auto}.shots figcaption{position:static;width:auto;max-width:none;border-radius:0;background:#0b1033;backdrop-filter:none;padding:8px 12px}header.top nav{display:none}}
@@ -101,7 +102,7 @@ footer{padding:50px 0 120px;color:var(--sub);font-size:14px;text-align:center}
   <header class="top">
     <img src="assets/icon-64.png" alt="">
     <b>WinterDesk <span class="forwin">для Windows</span></b>
-    <nav><a href="#features">Возможности</a><a href="#shots">Скриншоты</a><a href="#how">Как установить</a><a href="#faq">Вопросы</a></nav>
+    <nav><a href="#features">Возможности</a><a href="#shots">Скриншоты</a><a href="#how">Как установить</a><a href="#faq">Вопросы</a><a href="#talk">Обсуждение</a></nav>
   </header>
 
   <div class="hero">
@@ -116,7 +117,7 @@ footer{padding:50px 0 120px;color:var(--sub);font-size:14px;text-align:center}
         </a>
         <a class="btn ghost" href="#features">Что умеет</a>
       </div>
-      <div class="meta"><span class="dlinfo">ZIP · меньше<span class="dlinfo">ZIP · около&nbsp;1&nbsp;МБ</span>nbsp;1<span class="dlinfo">ZIP · около&nbsp;1&nbsp;МБ</span>nbsp;МБ</span> · Windows 10 и 11 (64-бит) · без установки · обновляется сама · <a href="https://github.com/NikoliniOFF/WinterDesk/releases">Все версии</a></div>
+      <div class="meta"><span class="dlinfo">ZIP · около&nbsp;1&nbsp;МБ</span> · Windows 10 и 11 (64-бит) · без установки · обновляется сама · <a href="https://github.com/NikoliniOFF/WinterDesk/releases">Все версии</a></div>
     </div>
     <div class="heroimg"><img src="assets/icon-512.png" alt="Значок WinterDesk" width="340" height="340"></div>
   </div>
@@ -180,11 +181,40 @@ footer{padding:50px 0 120px;color:var(--sub);font-size:14px;text-align:center}
     <details><summary>Windows пишет «Система Windows защитила ваш компьютер»</summary><p>Это SmartScreen: программа новая и пока не подписана сертификатом. Нажмите «Подробнее», затем «Выполнить в любом случае». Скачивайте WinterDesk только со страницы выпусков на GitHub.</p></details>
     <details><summary>Где настройки?</summary><p>В панели, которая открывается щелчком по значку WinterDesk в трее (справа внизу, у часов). Если значка не видно, нажмите стрелку <span class="kbd">^</span> рядом с часами — его можно перетащить оттуда на панель задач. Правый клик по значку — быстрое меню.</p></details>
     <details><summary>Как поставить на паузу или выключить?</summary><p><span class="kbd">Ctrl+Alt+F12</span> — пауза всего, ещё раз — продолжить. Выйти: кнопка «Выйти» внизу панели или пункт «Выйти» в меню значка.</p></details>
-    <details><summary>Как обновлять?</summary><p>WinterDesk сам проверяет новые версии: через минуту после запуска и раз в 12 часов, а если интернета не было — тихо повторит позже. Во вкладке «О программе» можно выбрать: обновляться автоматически, спрашивать или не проверять. Настройки при обновлении сохраняются.</p></details>
+    <details><summary>Как обновлять?</summary><p>WinterDesk сам проверяет новые версии: через минуту после запуска и раз в 12 часов, а если интернета не было — тихо повторит позже. О новой версии появится уведомление у часов (если не обновились — напомнит, но не чаще раза в сутки), а если вы пропустили несколько версий, в «Что нового» будут изменения всех сразу. Во вкладке «О программе» можно выбрать: обновляться автоматически, спрашивать или не проверять. Настройки при обновлении сохраняются.</p></details>
     <details><summary>Не будет ли тормозить игры?</summary><p>Нет: программа работает с пониженным приоритетом, рисует через видеокарту и сама встаёт на паузу, когда игра или видео развёрнуты на весь экран. С несколькими мониторами снег прячется только там, где игра, а если игра заняла все экраны — WinterDesk почти не нагружает компьютер.</p></details>
     <details><summary>Как запускать вместе с Windows?</summary><p>Включите «Запускать вместе с Windows» внизу вкладки «Снег» в панели настроек. Сначала распакуйте архив в постоянную папку — если её потом перенести, путь автозапуска поправится сам.</p></details>
     <details><summary>Программа что-нибудь отправляет?</summary><p>Нет. WinterDesk нужны только границы окон, а в интернет он обращается лишь к GitHub, чтобы проверить обновления (это можно выключить).</p></details>
     <details><summary>Системные требования</summary><p>Windows 10 или 11, 64-бит. Видеокарта с поддержкой DirectX 11 (есть практически в любом компьютере).</p></details>
+  </section>
+
+  <section id="talk">
+    <h2 class="t">Обсуждение</h2>
+    <p class="st">Есть идея для WinterDesk, вопрос или что-то работает не так? Пишите — читаю всё, лучшие идеи попадают в следующие версии.</p>
+    <div class="talkbtns">
+      <a class="btn main" href="https://github.com/NikoliniOFF/WinterDesk/discussions/new?category=ideas">💡 Предложить идею</a>
+      <a class="btn ghost" href="https://github.com/NikoliniOFF/WinterDesk/issues/new?template=bug.yml">🐞 Сообщить о баге</a>
+      <a class="btn ghost" href="https://github.com/NikoliniOFF/WinterDesk/discussions">💬 Все обсуждения</a>
+    </div>
+    <div class="giscus-wrap">
+      <script src="https://giscus.app/client.js"
+        data-repo="NikoliniOFF/WinterDesk"
+        data-repo-id="R_kgDOVsAwvA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOVsAwvM4DK_Tv"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="transparent_dark"
+        data-lang="ru"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+      </script>
+      <p class="giscus-note">Комментарии работают через GitHub-аккаунт и хранятся в <a href="https://github.com/NikoliniOFF/WinterDesk/discussions">обсуждениях проекта</a>.</p>
+    </div>
   </section>
 
   <div class="cta">
@@ -194,10 +224,10 @@ footer{padding:50px 0 120px;color:var(--sub);font-size:14px;text-align:center}
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
       Скачать WinterDesk
     </a>
-    <p class="cta-meta"><span class="dlinfo">ZIP · меньше<span class="dlinfo">ZIP · около&nbsp;1&nbsp;МБ</span>nbsp;1<span class="dlinfo">ZIP · около&nbsp;1&nbsp;МБ</span>nbsp;МБ</span> · <a href="https://github.com/NikoliniOFF/WinterDesk/releases">Все версии</a></p>
+    <p class="cta-meta"><span class="dlinfo">ZIP · около&nbsp;1&nbsp;МБ</span> · <a href="https://github.com/NikoliniOFF/WinterDesk/releases">Все версии</a></p>
   </div>
 
-  <footer>WinterDesk для Windows · Windows 10 и 11 (64-бит) · <a href="https://github.com/NikoliniOFF/WinterDesk/releases">все версии</a></footer>
+  <footer>WinterDesk для Windows · Windows 10 и 11 (64-бит) · <a href="https://github.com/NikoliniOFF/WinterDesk/releases">все версии</a> · <a href="https://github.com/NikoliniOFF/WinterDesk/discussions">обсуждения</a></footer>
 </div>
 
 <script>

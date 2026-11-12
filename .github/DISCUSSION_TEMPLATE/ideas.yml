@@ -1,0 +1,17 @@
+title: "Идея: "
+body:
+  - type: markdown
+    attributes:
+      value: "Расскажите, что хотелось бы видеть в WinterDesk. Можно кратко — главное, чтобы было понятно, что и зачем."
+  - type: textarea
+    id: idea
+    attributes:
+      label: Идея
+      placeholder: "Например: снеговик машет рукой, когда наводишь курсор"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Зачем / как это выглядит
+      description: Необязательно. Можно приложить картинку или ссылку.
