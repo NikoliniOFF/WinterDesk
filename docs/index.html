@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>WinterDesk — зима и Новый год на рабочем столе Windows</title>
-<meta name="description" content="WinterDesk — пушистый снег, сугробы на окнах, гирлянды, ёлочка, салют и отсчёт до Нового года прямо на рабочем столе Windows 10 и 11. Бесплатно.">
-<meta property="og:title" content="WinterDesk — зима и Новый год на рабочем столе">
-<meta property="og:description" content="Снег, сугробы, гирлянды, ёлочка и отсчёт до Нового года на рабочем столе Windows.">
+<title>WinterDesk для Windows — зима и Новый год на рабочем столе Windows 10 и 11</title>
+<meta name="description" content="WinterDesk для Windows — пушистый снег, сугробы на окнах, гирлянды, ёлочка, салют и отсчёт до Нового года прямо на рабочем столе Windows 10 и 11. Бесплатно.">
+<meta property="og:title" content="WinterDesk для Windows — зима и Новый год на рабочем столе">
+<meta property="og:description" content="Программа для Windows 10 и 11: снег, сугробы, гирлянды, ёлочка и отсчёт до Нового года на рабочем столе.">
 <meta property="og:image" content="assets/banner.jpg">
 <meta name="theme-color" content="#1b2470">
 <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -28,6 +28,7 @@ header.top nav{margin-left:auto;display:flex;gap:22px;font-size:15px}
 header.top nav a{color:var(--sub);text-decoration:none}
 header.top nav a:hover{color:#fff}
 .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:56px 0 40px}
+.winbadge{display:inline-flex;align-items:center;gap:8px;padding:6px 13px;border-radius:999px;background:#5cc8ff1f;border:1px solid #5cc8ff55;color:#bfe9ff;font-size:14px;font-weight:600;margin-bottom:16px}.winbadge svg{width:16px;height:16px}.forwin{font-weight:500;color:var(--sub);font-size:.9em}
 .hero h1{font-size:64px;line-height:1.02;margin:0 0 14px;letter-spacing:-1.5px;background:linear-gradient(90deg,#fff,#cfd6ff 60%,#e3c8ff);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p.lead{font-size:21px;color:#d4daf7;margin:0 0 28px;max-width:560px}
 .btns{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
@@ -57,11 +58,17 @@ section p.st{color:var(--sub);margin:0 0 30px;font-size:17px}
 .card .e{font-size:30px}
 .card h3{margin:8px 0 6px;font-size:19px}
 .card p{margin:0;color:var(--sub);font-size:15px}
-.shots{display:grid;grid-template-columns:1.4fr 1fr;gap:18px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .shots figure{margin:0;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#000;position:relative}
-.shots img{display:block;width:100%;height:100%;object-fit:cover}
-.shots figcaption{position:absolute;left:12px;bottom:10px;font-size:13px;padding:4px 10px;border-radius:10px;background:#0b1033cc}
-.shots .big{grid-row:span 2}
+.shots .wide{grid-column:1/-1}
+.shots img,.shots video{display:block;width:100%;height:100%;object-fit:cover;aspect-ratio:16/9}
+.shots .wide.strip video{aspect-ratio:64/27}
+.shots figcaption{position:absolute;left:12px;bottom:10px;right:12px;width:max-content;max-width:calc(100% - 24px);font-size:13px;padding:5px 11px;border-radius:10px;background:#0b1033d9;backdrop-filter:blur(6px)}
+.panels-h{margin:46px 0 6px;font-size:22px;text-align:center}
+.panels{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px 4px 18px;justify-content:safe center}
+.panels figure{margin:0;flex:0 0 196px;scroll-snap-align:center;text-align:center}
+.panels img{width:196px;height:auto;display:block;border-radius:14px;border:1px solid var(--line);box-shadow:0 14px 34px #0008}
+.panels figcaption{margin-top:9px;font-size:14px;color:var(--sub)}
 .steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .step{padding:22px;border-radius:20px;background:var(--card);border:1px solid var(--line)}
 .step::before{counter-increment:s;content:counter(s);display:inline-grid;place-items:center;width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,#5b6cff,#8a5cff);font-weight:700;margin-bottom:10px}
@@ -79,7 +86,7 @@ details p{color:#c9d0f0;margin:10px 0 0}
 .cta p{margin:0 0 22px;color:#dfe4ff}
 footer{padding:50px 0 120px;color:var(--sub);font-size:14px;text-align:center}
 .drift{position:fixed;left:0;right:0;bottom:-30px;height:90px;z-index:3;pointer-events:none;background:radial-gradient(60% 100% at 25% 100%,#eef3ff 60%,transparent 61%),radial-gradient(55% 90% at 80% 100%,#e2e9ff 60%,transparent 61%);opacity:.95}
-@media (max-width:900px){.hero{grid-template-columns:1fr;text-align:center;padding-top:34px}.hero p.lead{margin-left:auto;margin-right:auto}.btns{justify-content:center}.heroimg{order:-1}.heroimg img{width:200px}.hero h1{font-size:46px}.grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.shots{grid-template-columns:1fr}.shots .big{grid-row:auto}header.top nav{display:none}}
+@media (max-width:900px){.hero{grid-template-columns:1fr;text-align:center;padding-top:34px}.hero p.lead{margin-left:auto;margin-right:auto}.btns{justify-content:center}.heroimg{order:-1}.heroimg img{width:200px}.hero h1{font-size:46px}.grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.shots{grid-template-columns:1fr}.panels{justify-content:flex-start}.shots img,.shots video{height:auto}.shots figcaption{position:static;width:auto;max-width:none;border-radius:0;background:#0b1033;backdrop-filter:none;padding:8px 12px}header.top nav{display:none}}
 @media (max-width:560px){.grid,.steps{grid-template-columns:1fr}.cd{gap:8px}.cd div{min-width:0;flex:1;padding:10px 4px}.cd b{font-size:30px}.cd span{font-size:11.5px}section h2.t{font-size:30px}.hero h1{font-size:40px}.btn{padding:14px 20px;font-size:17px}}
 @media (prefers-reduced-motion:reduce){.heroimg img{animation:none}}
 </style>
@@ -92,13 +99,14 @@ footer{padding:50px 0 120px;color:var(--sub);font-size:14px;text-align:center}
 <div class="wrap">
   <header class="top">
     <img src="assets/icon-64.png" alt="">
-    <b>WinterDesk</b>
+    <b>WinterDesk <span class="forwin">для Windows</span></b>
     <nav><a href="#features">Возможности</a><a href="#shots">Скриншоты</a><a href="#how">Как установить</a><a href="#faq">Вопросы</a></nav>
   </header>
 
   <div class="hero">
     <div>
-      <h1>Зима и Новый год<br>на рабочем столе</h1>
+      <div class="winbadge"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5.5 10.5 4.4v7.1H3zm8.5-1.2L21 3v8.5h-9.5zM3 12.5h7.5v7.1L3 18.5zm8.5 0H21V21l-9.5-1.3z"/></svg>Для Windows 10 и 11</div>
+      <h1>Зима и Новый год<br>на рабочем столе Windows</h1>
       <p class="lead">Пушистый снег идёт прямо по экрану, копится сугробами на окнах и панели задач, а гирлянды, ёлочка, салют и отсчёт до полуночи создают настоящее праздничное настроение.</p>
       <div class="btns">
         <a class="btn main" href="https://github.com/NikoliniOFF/WinterDesk/releases/latest">
@@ -136,13 +144,21 @@ footer{padding:50px 0 120px;color:var(--sub);font-size:14px;text-align:center}
 
   <section id="shots">
     <h2 class="t">Как это выглядит</h2>
-    <p class="st">Снег, сугробы и праздник поверх вашего рабочего стола.</p>
+    <p class="st">Настоящие записи с рабочего стола Windows&nbsp;11 — без монтажа.</p>
     <div class="shots">
-      <figure class="big"><img src="assets/screens/scene.jpg" alt="Снегопад, сугробы, ёлочка и Дед Мороз" loading="lazy"><figcaption>Снегопад, ёлочка и Дед Мороз</figcaption></figure>
-      <figure><img src="assets/screens/tractor.jpg" alt="Трактор расчищает панель задач" loading="lazy"><figcaption>Трактор чистит панель задач</figcaption></figure>
-      <figure><img src="assets/screens/new-year.jpg" alt="Финал: С Новым годом!" loading="lazy"><figcaption>Полночь: «С Новым годом!»</figcaption></figure>
-      <figure><img src="assets/screens/panel-snow.jpg" alt="Панель настроек" loading="lazy"><figcaption>Панель настроек</figcaption></figure>
-      <figure><img src="assets/screens/fireworks.jpg" alt="Салют" loading="lazy"><figcaption>Салют</figcaption></figure>
+      <figure class="wide"><video class="lazyv" muted loop playsinline preload="none" poster="assets/media/snow-poster.jpg" data-src="assets/media/snow.mp4" aria-label="Снегопад на рабочем столе"></video><figcaption>Снег идёт прямо по рабочему столу, окна и ярлыки работают как обычно</figcaption></figure>
+      <figure><video class="lazyv" muted loop playsinline preload="none" poster="assets/media/window-poster.jpg" data-src="assets/media/window.mp4" aria-label="Сугроб и гирлянда на окне"></video><figcaption>Сугроб и гирлянда на окне</figcaption></figure>
+      <figure><img src="assets/media/countdown.jpg" alt="Гирлянда по краю экрана и отсчёт до Нового года" loading="lazy" width="960" height="540"><figcaption>Гирлянда по краю экрана и отсчёт до Нового года</figcaption></figure>
+      <figure class="wide strip"><video class="lazyv" muted loop playsinline preload="none" poster="assets/media/tractor-poster.jpg" data-src="assets/media/tractor.mp4" aria-label="Трактор расчищает панель задач"></video><figcaption>Трактор расчищает сугроб на панели задач и едет к ёлочке</figcaption></figure>
+    </div>
+    <h3 class="panels-h">Все настройки — в одной панели у часов</h3>
+    <p class="st">Нажмите на значок WinterDesk в трее — каждую часть праздника можно включить, выключить и настроить.</p>
+    <div class="panels">
+      <figure><img src="assets/media/panel-snow.jpg" alt="Вкладка «Снег»: снегопад, инструменты, ветер" loading="lazy" width="380" height="790"><figcaption>Снегопад, ветер и инструменты</figcaption></figure>
+      <figure><img src="assets/media/panel-piles.jpg" alt="Сугробы на окнах и панели задач, трактор" loading="lazy" width="380" height="790"><figcaption>Сугробы и трактор</figcaption></figure>
+      <figure><img src="assets/media/panel-garland.jpg" alt="Гирлянда: где висит, режимы и цвета" loading="lazy" width="380" height="790"><figcaption>Гирлянды</figcaption></figure>
+      <figure><img src="assets/media/panel-tree.jpg" alt="Ёлочка с игрушками" loading="lazy" width="380" height="790"><figcaption>Ёлочка и игрушки</figcaption></figure>
+      <figure><img src="assets/media/panel-update.jpg" alt="О программе и обновления" loading="lazy" width="380" height="790"><figcaption>Обновления</figcaption></figure>
     </div>
   </section>
 
@@ -179,7 +195,7 @@ footer{padding:50px 0 120px;color:var(--sub);font-size:14px;text-align:center}
     </a>
   </div>
 
-  <footer>WinterDesk · для Windows 10 и 11 · <a href="https://github.com/NikoliniOFF/WinterDesk/releases">все версии</a></footer>
+  <footer>WinterDesk для Windows · Windows 10 и 11 (64-бит) · <a href="https://github.com/NikoliniOFF/WinterDesk/releases">все версии</a></footer>
 </div>
 
 <script>
@@ -219,6 +235,13 @@ footer{padding:50px 0 120px;color:var(--sub);font-size:14px;text-align:center}
     el('dl').textContent=plural(d,'день','дня','дней');el('hl').textContent=plural(h,'час','часа','часов');el('ml').textContent=plural(m,'минута','минуты','минут');el('sl').textContent=plural(sec,'секунда','секунды','секунд');}
   tick();setInterval(tick,1000);
 })();
+</script>
+<script>
+(function(){var v=document.querySelectorAll('video.lazyv');
+function go(e){if(!e.src){e.src=e.dataset.src;}var p=e.play();if(p&&p.catch)p.catch(function(){});}
+if(!('IntersectionObserver' in window)){v.forEach(go);return;}
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting)go(x.target);else if(x.target.src)x.target.pause();});},{rootMargin:'200px'});
+v.forEach(function(e){io.observe(e);});})();
 </script>
 </body>
 </html>

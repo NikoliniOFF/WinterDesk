@@ -1,4 +1,4 @@
-## ❄️ WinterDesk X.Y.Z
+## ❄️ WinterDesk для Windows X.Y.Z
 
 **Скачать:** `WinterDesk-X.Y.Z-win64.zip` ниже (или постоянная ссылка `WinterDesk-win64.zip`). Распакуйте и запустите `WinterDesk.exe`.
 

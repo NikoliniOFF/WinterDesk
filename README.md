@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/banner.jpg" alt="WinterDesk — зима и Новый год на рабочем столе" width="100%">
+  <img src="docs/assets/banner.jpg" alt="WinterDesk для Windows — зима и Новый год на рабочем столе" width="100%">
 </p>
 
 <p align="center">
@@ -14,8 +14,10 @@
   <img src="https://img.shields.io/badge/Windows-10%20%7C%2011%20(64--%D0%B1%D0%B8%D1%82)-5cc8ff?labelColor=1b2470" alt="Windows 10 и 11">
 </p>
 
+<h1 align="center">WinterDesk для Windows</h1>
+
 <p align="center">
-  <b>Пушистый снег прямо на рабочем столе Windows.</b><br>
+  <b>Программа для Windows 10 и 11: пушистый снег прямо на рабочем столе.</b><br>
   Сугробы на окнах и панели задач, гирлянды, ёлочка, салют и отсчёт до Нового года.<br>
   Бесплатно · без установки · без рекламы · обновляется сама.
 </p>
@@ -39,14 +41,17 @@
 ## 📸 Как это выглядит
 
 <p align="center">
-  <img src="docs/assets/screens/scene.jpg" alt="Снегопад, сугробы, ёлочка и Дед Мороз" width="100%">
+  <img src="docs/assets/media/tractor.gif" alt="Трактор расчищает сугроб на панели задач" width="100%">
 </p>
 <p align="center">
-  <img src="docs/assets/screens/tractor.jpg" alt="Трактор расчищает панель задач" width="49%">
-  <img src="docs/assets/screens/new-year.jpg" alt="С Новым годом!" width="49%">
+  <img src="docs/assets/media/desktop.jpg" alt="Снег, гирлянда, ёлочка, отсчёт до Нового года и панель настроек на рабочем столе" width="100%">
 </p>
 <p align="center">
-  <img src="docs/assets/screens/panel-snow.jpg" alt="Панель настроек" width="100%">
+  <img src="docs/assets/media/window-pile.jpg" alt="Сугроб и гирлянда на окне" width="49%">
+  <img src="docs/assets/media/countdown.jpg" alt="Гирлянда по краю экрана и отсчёт до Нового года" width="49%">
+</p>
+<p align="center">
+  <img src="docs/assets/media/panels.jpg" alt="Панель настроек: снег, гирлянды, ёлочка, обновления" width="100%">
 </p>
 
 ## 📥 Как установить
