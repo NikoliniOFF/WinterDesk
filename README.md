@@ -142,12 +142,12 @@ WinterDesk сам проверяет новые версии на этой ст�
 
 <table>
   <tr>
-    <td width="96" align="center"><a href="https://nikolinioff.github.io/PeekDesk/"><img src="docs/assets/peekdesk-128.png" width="80" height="80" alt="PeekDesk"></a></td>
-    <td><a href="https://nikolinioff.github.io/PeekDesk/"><b>PeekDesk</b></a><br>Мгновенный предпросмотр файлов по пробелу, как Quick Look в macOS.<br><sub><a href="https://nikolinioff.github.io/PeekDesk/">Сайт</a> · <a href="https://github.com/NikoliniOFF/PeekDesk">GitHub</a></sub></td>
-  </tr>
-  <tr>
     <td width="96" align="center"><a href="https://nikolinioff.github.io/HubDesk/"><img src="docs/assets/hubdesk-128.png" width="80" height="80" alt="HubDesk"></a></td>
     <td><a href="https://nikolinioff.github.io/HubDesk/"><b>HubDesk</b></a><br>Все программы Nikolini в одном окне: установка, включение, автозапуск и обновления галочками.<br><sub><a href="https://nikolinioff.github.io/HubDesk/">Сайт</a> · <a href="https://github.com/NikoliniOFF/HubDesk">GitHub</a></sub></td>
+  </tr>
+  <tr>
+    <td width="96" align="center"><a href="https://nikolinioff.github.io/PeekDesk/"><img src="docs/assets/peekdesk-128.png" width="80" height="80" alt="PeekDesk"></a></td>
+    <td><a href="https://nikolinioff.github.io/PeekDesk/"><b>PeekDesk</b></a><br>Мгновенный предпросмотр файлов по пробелу, как Quick Look в macOS.<br><sub><a href="https://nikolinioff.github.io/PeekDesk/">Сайт</a> · <a href="https://github.com/NikoliniOFF/PeekDesk">GitHub</a></sub></td>
   </tr>
   <tr>
     <td width="96" align="center"><a href="https://nikolinioff.github.io/SpotDesk/"><img src="docs/assets/spotdesk-128.png" width="80" height="80" alt="SpotDesk"></a></td>
