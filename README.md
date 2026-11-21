@@ -161,6 +161,10 @@ WinterDesk сам проверяет новые версии на этой ст�
     <td width="96" align="center"><a href="https://nikolinioff.github.io/DockDesk/"><img src="docs/assets/dockdesk-128.png" width="80" height="80" alt="DockDesk"></a></td>
     <td><a href="https://nikolinioff.github.io/DockDesk/"><b>DockDesk</b></a><br>Док для Windows, как в macOS: любимые программы внизу экрана, значки плавно растут под курсором.<br><sub><a href="https://nikolinioff.github.io/DockDesk/">Сайт</a> · <a href="https://github.com/NikoliniOFF/DockDesk">GitHub</a></sub></td>
   </tr>
+  <tr>
+    <td width="96" align="center"><a href="https://nikolinioff.github.io/IslandDesk/"><img src="docs/assets/islanddesk-128.png" width="80" height="80" alt="IslandDesk"></a></td>
+    <td><a href="https://nikolinioff.github.io/IslandDesk/"><b>IslandDesk</b></a><br>«Динамический остров» для Windows: музыка, громкость, таймер, загрузки и уведомления в живой пилюле вверху экрана.<br><sub><a href="https://nikolinioff.github.io/IslandDesk/">Сайт</a> · <a href="https://github.com/NikoliniOFF/IslandDesk">GitHub</a></sub></td>
+  </tr>
 </table>
 
 ## 💻 Системные требования
